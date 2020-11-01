@@ -1,0 +1,21 @@
+{
+  "name": "practicenode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "startPath": "nodemon path.js",
+    "startServer": "nodemon server.js",
+    "startOS": "nodemon os.js",
+    "startFS": "nodemon fs.js",
+    "startREST": "nodemon REST.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
