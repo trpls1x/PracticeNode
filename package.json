@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "server-dev" : "nodemon express/server.js",
+    "server-prod" : "node express/server.js",
     "startPath": "nodemon path.js",
-    "startServer": "nodemon server.js",
+    "startHttp": "nodemon http.js",
     "startOS": "nodemon os.js",
     "startFS": "nodemon fs.js",
     "startREST": "nodemon REST.js",
@@ -14,7 +16,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "express": "^4.17.1"
+  },
   "devDependencies": {
     "nodemon": "^2.0.6"
   }
