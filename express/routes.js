@@ -1,7 +1,4 @@
-const users = [
-    {name: "Sasha", age: 18},
-    {name: "Masha", age: 18}
-]
+User = require('./models/UserModel')
 
 module.exports = function(app) {
     app.get('/', (req, res) => {
@@ -9,6 +6,11 @@ module.exports = function(app) {
     })
     
     app.get('/students', (req, res) => {
-        res.json(users)
+        User.find((err,users) => {
+            if(err)
+                res.send(err);
+
+            res.json(users);
+        })
     })
 }
